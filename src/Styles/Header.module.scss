@@ -1,0 +1,39 @@
+%badgeBox {
+  border-radius: 1rem;
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  padding: 1px 9px;
+  border-radius: 1rem;
+
+  color: rgb(248, 48, 48);
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: rgb(43, 36, 78);
+  color: aliceblue;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  top: 0;
+  ul {
+    display: flex;
+  }
+
+  .badgeNumber {
+    @extend %badgeBox;
+     top: 24px;
+    left: 26px;
+  }
+
+  .badgeNumberLike {
+    @extend %badgeBox;
+    top: 24px;
+    left: 60px;
+   
+  }
+}

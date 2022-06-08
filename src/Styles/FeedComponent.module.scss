@@ -1,0 +1,86 @@
+$bgColor: #0e182e;
+$textColor: #ffffff;
+$borderCOlor: rgb(250, 250, 250);
+$iconBackground:  rgb(7, 34, 94);
+
+
+
+
+.continuer {
+  margin: 1rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bgColor;
+  border-radius: 0.6rem;
+  color: $textColor;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  .dateBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+  .imageBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image {
+      width: 100%;
+    }
+  }
+  .icons {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+    padding: 0.5rem;
+    width: 100%;
+    left: 20px;
+    background-color: $iconBackground;
+  }
+  .descriptionBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: right;
+    right: 0;
+  }
+  .commentBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: right;
+    right: 0;
+    p {
+      margin-top: 0.5rem;
+    }
+    form {
+      text-align: center;
+      textarea {
+        width: 100%;
+        height: 100px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+       
+      }
+      button {
+          border-radius: 1rem;
+          padding: 0.5rem;
+          border: 1px solid rgb(73, 73, 73);
+          outline: none;
+      }
+    }
+  }
+}
