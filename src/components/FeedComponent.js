@@ -17,6 +17,7 @@ const FeedComponent = ({
   inputName,
   comment,
   value,
+  ref,
 }) => {
   return (
     <div className={styles.continuer}>
@@ -48,6 +49,7 @@ const FeedComponent = ({
             name={inputName}
             onChange={inputHandler}
             value={value}
+            ref={ref}
           />
           <button type="submit">ارسال نظر</button>
         </form>

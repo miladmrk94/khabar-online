@@ -12,6 +12,7 @@ import {
 } from "react-icons/ri";
 
 function HomePage() {
+  const refData = useRef();
   const [state, setState] = useState();
   const { data, loading, err } = useSelector((state) => state.feed);
   const dispatch = useDispatch();
@@ -65,6 +66,7 @@ function HomePage() {
               iconLike={i.like ? <RiHeartFill /> : <RiHeartLine />}
               inputHandler={(e) => inputHandler(i.id, e)}
               inputName={i.id}
+              ref={refData}
               value={state}
               submitHandler={(e) => submitHandler(i.id, e)}
               comment={i.comments.map((i) => {
