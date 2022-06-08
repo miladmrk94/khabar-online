@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/khabar-online/static/css/main.e162ea41.css",
+    "main.js": "/khabar-online/static/js/main.f9876090.js",
+    "static/media/SansLight.woff": "/khabar-online/static/media/SansLight.a7dd6af7cc7aa2373e7e.woff",
+    "index.html": "/khabar-online/index.html",
+    "main.e162ea41.css.map": "/khabar-online/static/css/main.e162ea41.css.map",
+    "main.f9876090.js.map": "/khabar-online/static/js/main.f9876090.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e162ea41.css",
+    "static/js/main.f9876090.js"
+  ]
+}
