@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../Styles/Header.module.scss";
 import { RiBookmarkFill, RiHeartFill } from "react-icons/ri";
-import { NavLink, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Header = ({ children }) => {
@@ -20,9 +19,8 @@ const Header = ({ children }) => {
         <main>
           <ul>
             <li>
-              <NavLink to="/favorite">
-                <RiBookmarkFill size={"33px"} color={"azure"} />
-              </NavLink>
+              <RiBookmarkFill size={"33px"} color={"azure"} />
+
               <span className={styles.badgeNumber}>{findFavorite.length}</span>
             </li>
             <li>

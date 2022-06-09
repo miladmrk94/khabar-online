@@ -7,8 +7,10 @@ export const asyncFeed = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const feed = await axios.get(
-        "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.khabaronline.ir%2Frss%2F&api_key=v2jsqyc9nbfl1jqqasf8acg5gdnihkgdhcc96caw&count=5"
+        "https://api.rss2json.com/v1/api.json?rss_url=https://www.khabaronline.ir/rss"
       );
+      console.log(feed);
+
       const addKey = (obj) => {
         return obj.map((i) => {
           return {
